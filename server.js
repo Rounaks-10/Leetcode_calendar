@@ -90,6 +90,7 @@ app.get("/contests.ics", (req, res) => {
         summary: contest.title,
         description: contest.description,
         url: contest.url,
+        floating: true,
         alarms: [
           {
             type: "display",
