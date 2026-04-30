@@ -79,6 +79,7 @@ app.get("/contests.ics", (req, res) => {
   try {
     const calendar = ical({
       name: "Coding Contests",
+      timezone: "Asia/Kolkata"
     });
 
     cachedContests.forEach((contest) => {
