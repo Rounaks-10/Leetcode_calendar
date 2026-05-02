@@ -78,7 +78,7 @@ cron.schedule("0 */12 * * *", generateLeetCodeContests);
 app.get("/contests.ics", (req, res) => {
   try {
     const calendar = ical({
-      name: "Coding Contests",
+      name: "Leetcode Coding Contests",
       timezone: "Asia/Kolkata"
     });
 
