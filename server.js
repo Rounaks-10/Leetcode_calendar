@@ -37,8 +37,8 @@ function generateLeetCodeContests() {
       contests.push({
         id: `lc-weekly-${date.toISOString()}`,
         title: "[LC] Weekly Contest",
-        start: setTime(date, 20, 0),
-        end: setTime(date, 21, 30),
+        start: setTime(date, 8, 0),
+        end: setTime(date, 9, 30),
         url: "https://leetcode.com/contest/",
         description: "LeetCode Weekly Contest",
       });
@@ -90,7 +90,6 @@ app.get("/contests.ics", (req, res) => {
         summary: contest.title,
         description: contest.description,
         url: contest.url,
-        floating: true,
         alarms: [
           {
             type: "display",
